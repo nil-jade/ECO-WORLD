@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<head>
+    <title>EcoWorld – Follow Eco-Friendly Habits</title>
+    <style>
+        /* --- General Styling and Typography --- */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0fff0; /* Light green/mint background */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #2e8b57; /* Sea green header */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: #2e8b57;
+            border-bottom: 2px solid #a2cd94;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+
+        /* --- Video Section Styling --- */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* --- Infographics Section Styling --- */
+        .infographics-gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .infographic-item {
+            width: 100%; /* Default for smaller screens */
+            max-width: 300px; /* Max width for larger screens */
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .infographic-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        @media (min-width: 768px) {
+            .infographic-item {
+                width: calc(33% - 20px); /* Adjust width for 3 items per row on larger screens */
+            }
+        }
+
+        /* --- Pledge Form Styling --- */
+        #pledge-form {
+            background-color: #e6ffe6; /* Very light green for the form area */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        #pledge-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #006400; /* Dark green label text */
+        }
+
+        #pledge-form input[type="text"],
+        #pledge-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; /* Include padding in the element's total width and height */
+        }
+
+        #pledge-form button {
+            background-color: #4CAF50; /* Green submit button */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        #pledge-form button:hover {
+            background-color: #45a049;
+        }
+
+        /* --- Pledges Display Styling --- */
+        #pledges-display {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fffaf0; /* Light cream/yellowish background for pledges */
+            border: 1px solid #a2cd94;
+            border-radius: 8px;
+        }
+
+        .pledge-item {
+            border-bottom: 1px dashed #ccc;
+            padding: 10px 0;
+        }
+
+        .pledge-item:last-child {
+            border-bottom: none;
+        }
+
+        .pledge-item strong {
+            color: #008080; /* Teal/cyan for the name */
+        }
+
+        .pledge-action {
+            font-style: italic;
+            margin-left: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            background-color: #2e8b57;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🌿 EcoWorld</h1>
+        <p>Your simple guide to an eco-friendly life!</p>
+    </header>
+
+    <div class="container">
+        
+        <section id="introduction">
+            <h2>🌍 Welcome to EcoWorld</h2>
+            <p>Every small action counts toward a healthier planet. Learn simple steps you can take today to make a big difference. Watch the video below to understand why environmental awareness is so important!</p>
+        </section>
+
+        <hr>
+
+        <section id="video-info">
+            <h2>🎥 Learn Why It Matters</h2>
+            <div class="video-container">
+        <div class="embed-video">
+    <iframe 
+        width="560" 
+        height="315" 
+        src="1.mp4" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen
+    ></iframe>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="infographics">
+            <h2>💡 Simple Eco-Friendly Tips</h2>
+            <p>Here are some visual tips to get you started:</p>
+            <div class="infographics-gallery">
+                <div class="infographic-item">
+                    
+                    <img src="/home/monish/vscode/html/3.jpg" alt="Reusable Bags Infographic">
+                </div>
+                <div class="infographic-item">
+
+                    <img src="/home/monish/vscode/html/2.jpg" alt="Save Water Infographic">
+                </div>
+                <div class="infographic-item">
+                    
+
+
+                    <img src="/home/monish/vscode/html/1.jpg" alt="Recycle Properly Infographic">
+                </div>
+            </div>
+        </section>
+        
+        <hr>
+
+        <section id="pledge-section">
+            <h2>✍️ Make Your Eco Pledge!</h2>
+            <p>Commit to an eco-friendly action today and inspire others!</p>
+            <form id="pledge-form">
+                <label for="pledge-name">Your Name:</label>
+                <input type="text" id="pledge-name" name="name" required>
+
+                <label for="pledge-action">Your Eco-Friendly Action (e.g., "I will take shorter showers", "I will switch to LED bulbs"):</label>
+                <textarea id="pledge-action" name="action" rows="3" required></textarea>
+
+                <button type="submit">Submit Pledge</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section id="community-pledges">
+            <h2>🌱 Community Pledges</h2>
+            <p>See what others are doing to help the environment:</p>
+            <div id="pledges-display">
+                <p>No pledges yet! Be the first to make a commitment.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        &copy; 2025 EcoWorld | Be the change you wish to see in the world.
+    </footer>
+
+    <script>
+        // --- JavaScript for Pledge Form and DOM Manipulation ---
+        
+        // 1. Initialize the array to store pledges
+        let pledges = [];
+
+        // 2. Get DOM elements
+        const pledgeForm = document.getElementById('pledge-form');
+        const pledgesDisplay = document.getElementById('pledges-display');
+
+        // 3. Function to display pledges on the page
+        function renderPledges() {
+            // Clear the current list
+            pledgesDisplay.innerHTML = '';
+
+            if (pledges.length === 0) {
+                pledgesDisplay.innerHTML = '<p>No pledges yet! Be the first to make a commitment.</p>';
+                return;
+            }
+
+            // Create and append a new div for each pledge
+            pledges.forEach((pledge, index) => {
+                const pledgeItem = document.createElement('div');
+                pledgeItem.className = 'pledge-item';
+                
+                // Set the inner HTML using the stored name and action
+                pledgeItem.innerHTML = `
+                    <p>
+                        <strong>${index + 1}. ${pledge.name}</strong> has pledged:
+                        <span class="pledge-action">"${pledge.action}"</span>
+                    </p>
+                `;
+                
+                pledgesDisplay.appendChild(pledgeItem);
+            });
+        }
+
+        // 4. Event listener for form submission
+        pledgeForm.addEventListener('submit', function(event) {
+            // Prevent the default form submission (which reloads the page)
+            event.preventDefault();
+
+            // Get values from the form inputs
+            const nameInput = document.getElementById('pledge-name').value.trim();
+            const actionInput = document.getElementById('pledge-action').value.trim();
+
+            if (nameInput && actionInput) {
+                // Create a new pledge object
+                const newPledge = {
+                    name: nameInput,
+                    action: actionInput
+                };
+
+                // Store the pledge in the JavaScript array
+                pledges.push(newPledge);
+
+                // Update the DOM to show the new list of pledges
+                renderPledges();
+
+                // Clear the form fields
+                pledgeForm.reset();
+            } else {
+                alert('Please enter both your name and your eco-friendly action.');
+            }
+        });
+
+        // 5. Initial render (to show any default or stored pledges, though none are hardcoded here)
+        renderPledges(); 
+
+    </script>
+</body>
+</html>
